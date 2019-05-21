@@ -1,9 +1,9 @@
 <?php
 
 
-	unset($_SESSION['email_s']);
-    unset($_SESSION['senha_s']);
-    unset($_SESSION['nome_s']);
+	session_start(); 
+	session_destroy(); 
     header('location:acesso.php');
+
 
     ?>

@@ -1,4 +1,13 @@
 
+<?php
+
+ session_start();
+  if((isset ($_SESSION['email_s']) == true) and (isset ($_SESSION['senha_s']) == true))
+  {
+    header('location:index.php');
+  }
+
+  ?>
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
@@ -6,7 +15,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Template de login, usando Bootstrap.</title>
+    <title>Exemplo Programação, Login.</title>
 
     <!-- Principal CSS do Bootstrap -->
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
